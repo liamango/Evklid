@@ -120,11 +120,20 @@ ul {
   padding: 20px 0;
 }
 
+
 .swiper-container {
-  max-width: 1770px;
+  width: 1770px;
   min-height: 620px;
 }
 
+.swiper-slide {
+  max-width: 1770px;
+  min-height: 620px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* 
 .banner__slide {
   max-width: 1770px;
   min-height: 620px;
@@ -133,11 +142,7 @@ ul {
   background-position: center;
   padding: 103px 80px;
   padding-bottom: 90px;
-}
-
-.banner__slide--1 {
-  background-image: url(../img/banner1.jpg);
-}
+} */
 
 .hero__title {
   margin: 0;
