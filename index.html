@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <script src="js/swiper-boundle.js"></script>
+  <script src="js/swiper-boundle.min.js"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
@@ -30,15 +35,17 @@
       </nav>
       <form action="https://jsonplaceholder.typicode.com/posts" class="header__form">
         <input type="text" class="header__form-input" />
-        <button class="header__search" aria-label="Поиск" </button> </form> <button class="burger">
-          <span class="burger__line"></span>
-        </button>
+        <button class="header__search" aria-label="Поиск"></button>
+      </form>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
     </div>
   </header>
 
   <main class="main">
     <!-- !section banner -->
-    <section class="banner-section">
+    <section class="banner-section" aria-label="Секция Проекты">
       <div class="container">
         <div class="banner__slide banner__slide--1">
           <h1 class="hero__title">Проектные решения любой сложности</h1>
@@ -49,9 +56,20 @@
           <button class="btn-reset btn">Заказать расчёт</button>
         </div>
       </div>
+
+      <div class="container swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          ...
+        </div>
+      </div>
+
     </section>
     <!-- !about-section -->
-    <section class="about-section">
+    <section class="about-section" aria-label="Секция О нас">
       <div class="container">
         <h2 class="about__title">О нас</h2>
         <p class="about__descr">
@@ -122,21 +140,21 @@
       </div>
     </section>
     <!-- !work-section -->
-    <section class="work-section">
+    <section class="work-section" aria-label="Секция как мы работаем">
       <div class="container">
         <h2 class="work-title about__title">Как мы работаем</h2>
         <ul class="work-list">
-          <li class="work-list-item1" aria-label="Первый шаг">
-            <a href="#" class="tabs__link">1 шаг</a>
+          <li class="work-list-item1">
+            <a href="#" class="tabs__link" aria-label="Первый шаг">1 шаг</a>
           </li>
-          <li class="work-list-item" aria-label="Второй шаг">
-            <a href="#" class="tabs__link">2 шаг</a>
+          <li class="work-list-item">
+            <a href="#" class="tabs__link" aria-label="Второй шаг">2 шаг</a>
           </li>
-          <li class="work-list-item" aria-label="Третий шаг">
-            <a href="#" class="tabs__link">3 шаг</a>
+          <li class="work-list-item">
+            <a href="#" class="tabs__link" aria-label="Третий шаг">3 шаг</a>
           </li>
-          <li class="work-list-item" aria-label="Четвертый шаг">
-            <a href="#" class="tabs__link">4 шаг</a>
+          <li class="work-list-item">
+            <a href="#" class="tabs__link" aria-label="Четвертый шаг">4 шаг</a>
           </li>
         </ul>
       </div>
@@ -170,7 +188,7 @@
     </section>
 
     <!-- !questions-section -->
-    <section class="questions-section">
+    <section class="questions-section" aria-label="Секция часто задаваемые вопросы">
       <div class="container">
         <h2 class="about__title questions__title">
           Часто задаваемые вопросы
@@ -285,7 +303,7 @@
     </div>
   </footer>
   <footer class="footer1">
-    <section class="footer__container1">
+    <section class="footer__container1" aria-label="Секция Оставить заявку">
       <div class="footer__center1">
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
           <h2 class="form__title1">Оставить заявку</h2>
@@ -345,6 +363,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

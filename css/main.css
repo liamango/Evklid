@@ -120,6 +120,11 @@ ul {
   padding: 20px 0;
 }
 
+.swiper-container {
+  max-width: 1770px;
+  min-height: 620px;
+}
+
 .banner__slide {
   max-width: 1770px;
   min-height: 620px;
