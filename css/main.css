@@ -441,6 +441,7 @@ ul {
 
 .accordion__link:hover {
   color: #ff9900;
+  cursor: pointer;
 }
 
 .footer {
@@ -1581,5 +1582,4 @@ ul {
   .footer-left {
     padding-bottom: 0;
   }
-
 }
