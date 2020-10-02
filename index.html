@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <script src="script/swiper-boundle.js"></script>
   <script src="script/swiper-boundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="css/swiper.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
@@ -196,28 +198,62 @@
         <h2 class="about__title questions__title">
           Часто задаваемые вопросы
         </h2>
-        <ul class="accordion">
+        <ul class="accordion" id="accordion">
           <li class="accordion__item">
-            <h3 class="accordion__title">Из чего формируется конечная стоимость проекта?</h3>
-            <button class="accordion-btn accordion-btn1 btn" aria-label="Развернуть"></button>
+            <label for="accordion__btn1" class="accordion__lable">
+              <h3 class="accordion__title">Из чего формируется конечная стоимость проекта?</h3>
+              <button class="accordion-btn accordion-btn1 btn" aria-label="Развернуть" id="accordion__btn1"></button>
+            </label>
+            <div class="accordion__text">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum in quod quibusdam tempora! Ab quae
+                harum in sed, veniam eveniet iure temporibus, culpa nulla, incidunt totam quo a minus modi!</p>
+            </div>
           </li>
+
           <li class="accordion__item">
-            <h3 class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать /
-              реализовать?</h3>
-            <button class="accordion-btn btn" aria-label="Развернуть"></button>
+            <label for="accordion__btn2" class="accordion__lable">
+              <h3 class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать /
+                реализовать?</h3>
+              <button class="accordion-btn btn" aria-label="Развернуть" id="accordion__btn2"></button>
+            </label>
+            <div class="accordion__text">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum in quod quibusdam tempora! Ab quae
+                harum in sed, veniam eveniet iure temporibus, culpa nulla, incidunt totam quo a minus modi!</p>
+            </div>
           </li>
+
           <li class="accordion__item">
-            <h3 class="accordion__title">Я выбираю между разными компаниями. В чём ваше отличие? </h3>
-            <button class="accordion-btn btn" aria-label="Развернуть"></button>
+            <label for="accordion__btn3" class="accordion__lable">
+              <h3 class="accordion__title">Я выбираю между разными компаниями. В чём ваше отличие? </h3>
+              <button class="accordion-btn btn" aria-label="Развернуть" id="accordion__btn3"></button>
+            </label>
+            <div class="accordion__text">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum in quod quibusdam tempora! Ab quae
+                harum in sed, veniam eveniet iure temporibus, culpa nulla, incidunt totam quo a minus modi!</p>
+            </div>
           </li>
+
           <li class="accordion__item">
-            <h3 class="accordion__title">Могу ли я делегировать вам работу / согласование с
-              подрядчиком / организацией? </h3>
-            <button class="accordion-btn btn" aria-label="Развернуть"></button>
+            <label for="accordion__btn4" class="accordion__lable">
+              <h3 class="accordion__title">Могу ли я делегировать вам работу / согласование с
+                подрядчиком / организацией? </h3>
+              <button class="accordion-btn btn" aria-label="Развернуть" id="accordion__btn4"></button>
+            </label>
+            <div class="accordion__text">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum in quod quibusdam tempora! Ab quae
+                harum in sed, veniam eveniet iure temporibus, culpa nulla, incidunt totam quo a minus modi!</p>
+            </div>
           </li>
+
           <li class="accordion__item">
-            <h3 class="accordion__title">Могу ли я вернуть деньги на каком-либо из этапов работ? </h3>
-            <button class="accordion-btn btn" aria-label="Развернуть"></button>
+            <label for="accordion__btn5" class="accordion__lable">
+              <h3 class="accordion__title">Могу ли я вернуть деньги на каком-либо из этапов работ? </h3>
+              <button class="accordion-btn btn" aria-label="Развернуть" id="accordion__btn5"></button>
+            </label>
+            <div class="accordion__text">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum in quod quibusdam tempora! Ab quae
+                harum in sed, veniam eveniet iure temporibus, culpa nulla, incidunt totam quo a minus modi!</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -294,6 +330,11 @@
     </div>
   </footer>
   <script src="script/main.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
+  </script>
 </body>
 
 </html>
