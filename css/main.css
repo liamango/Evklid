@@ -431,7 +431,7 @@ ul {
   background-color: #d2d2d2;
 }
 
-.accordion__link {
+.accordion__title {
   font-size: 24px;
   line-height: 1.5;
   font-weight: bold;
@@ -439,7 +439,7 @@ ul {
   transition: 0.2s ease-in-out;
 }
 
-.accordion__link:hover {
+.accordion__title:hover {
   color: #ff9900;
   cursor: pointer;
 }
@@ -878,7 +878,7 @@ ul {
     max-width: 78%;
   }
 
-  .accordion__link {
+  .accordion__title {
     font-size: 20px;
   }
 
@@ -1516,7 +1516,7 @@ ul {
     margin: 20px 0 22px 0;
   }
 
-  .accordion__link {
+  .accordion__title {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
