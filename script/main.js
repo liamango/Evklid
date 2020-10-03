@@ -34,3 +34,14 @@ let mySwiper = new Swiper('.swiper-container', {
 
 
 })
+
+$(function () {
+  $("#accordion").accordion();
+});
+
+$(document).ready(function () {
+  $('.burger').click(function (event) {
+    $('.burger,.header__nav').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});
