@@ -1,0 +1,43 @@
+.burger {
+   --burger-width: 30px;
+   --burger-height: 23px;
+   --burger-line-height: 4px;
+   width: var(--burger-width);
+   height: var(--burger-height);
+   position: relative;
+   display: none;
+   color: #000;
+   border: none;
+   background-color: #fff;
+ }
+ 
+ .burger__line {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+   height: var(--burger-line-height);
+   background-color: currentColor;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .burger::before,
+ .burger::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: var(--burger-line-height);
+   background-color: currentColor;
+   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+ }
+ 
+ .burger::before {
+   top: 0;
+ }
+ 
+ .burger::after {
+   bottom: 0;
+ }
+ 

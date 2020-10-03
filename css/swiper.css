@@ -35,15 +35,3 @@
 .swiper-button-prev:after .swiper-button-next:after {
   display: none;
 }
-
-@media (max-width: 576px) {
-  .swiper-container {
-    min-height: 400px;
-  }
-}
-
-@media (max-width: 420px) {
-  .swiper-container {
-    min-height: 262px;
-  }
-}
