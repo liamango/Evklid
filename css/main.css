@@ -4,6 +4,10 @@
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px solid black;
+}
+
 html {
   box-sizing: border-box;
   overflow-x: hidden;
