@@ -43,5 +43,8 @@ $(document).ready(function () {
   $('.burger').click(function (event) {
     $('.burger,.header__nav').toggleClass('active');
     $('body').toggleClass('lock');
+
+    $(this).find(".line").toggleClass("active");
+    $(this).find(".line").toggleClass("hover");
   });
 });
