@@ -45,12 +45,18 @@ $(document).ready(function () {
     $(this).find(".line").toggleClass("active");
     $(this).find(".line").toggleClass("hover");
   });
-  $("a[href^='#']").click(function () {
+
+  $(".header__nav, .nav__list, .nav__link").click(function () {
+    $(".burger, .header__nav, .line").removeClass("active");
+    $("body").removeClass("lock");
+  });
+
+
+  $("a[href^='#']").click(function (event) {
     var _href = $(this).attr("href");
     $("html, body").animate({
       scrollTop: $(_href).offset().top + "px"
     });
     return false;
   });
-
 });
