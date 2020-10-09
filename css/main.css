@@ -522,8 +522,70 @@ ul {
   white-space: nowrap;
 }
 
-.form__check label {
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
   cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #CACACA;
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 4px;
+    height: 7px;
+    border-radius: 1px;
+    border-right: 2px solid #97EE3F;
+    border-bottom: 2px solid #97EE3F;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
 }
 
 .footer-nav {
@@ -759,6 +821,7 @@ ul {
 
   .header__form {
     margin-right: -25px;
+    z-index: 3;
   }
 
   .banner-text {
@@ -1063,10 +1126,10 @@ ul {
     margin-bottom: 14px;
     line-height: 1;
   }
-
-  .accordion__lable {
-    justify-content: space-between;
-  }
+  /* 
+    .accordion__lable {
+      justify-content: space-between;
+    } */
 
   .accordion__title {
     margin: 0;
