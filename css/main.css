@@ -234,6 +234,10 @@ ul {
   color: #fff;
 }
 
+.note {
+  transform: translateY(3px) translateX(1px);
+}
+
 .left-block-btn {
   width: 175px;
   height: 58px;
@@ -1418,10 +1422,6 @@ input[type="checkbox"]:checked + label:after {
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 28px;
-  }
-
-  .note {
-    transform: translateY(5px) translateX(1px);
   }
 
   .about-section .left-block {
