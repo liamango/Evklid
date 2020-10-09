@@ -513,79 +513,78 @@ ul {
 }
 
 .form__data {
+  margin-left: 31px;
   flex-shrink: 0;
-  display: inline-block;
-  font-size: 16px;
   color: #cacaca;
-  margin-left: 7px;
-  padding-left: 24px;
-  white-space: nowrap;
+  font-size: 16px;
+  line-height: 32px;
 }
 
-input[type="checkbox"]:checked, 
+/* !Checkbox */
+
+input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 
-input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:checked + label,
 input[type="checkbox"]:not(:checked) + label {
   display: inline-block;
   position: relative;
-  padding-left: 28px;
-  line-height: 20px;
+  padding-left: 20px;
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:checked + label:before,
 input[type="checkbox"]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 8px;
   width: 14px;
   height: 14px;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   background-color: transparent;
 }
 
-input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:checked + label:before,
 input[type="checkbox"]:not(:checked) + label:before {
-    border-radius: 2px;
+  border-radius: 2px;
 }
 
-input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
-    content: "";
-    position: absolute;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
-    left: 3px;
-    top: 4px;
-    width: 4px;
-    height: 7px;
-    border-radius: 1px;
-    border-right: 2px solid #97EE3F;
-    border-bottom: 2px solid #97EE3F;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  left: 3px;
+  top: 12px;
+  width: 9px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 2px solid #97ee3f;
+  border-bottom: 2px solid #97ee3f;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 input[type="checkbox"]:not(:checked) + label:after {
-    opacity: 0;
+  opacity: 0;
 }
 
 input[type="checkbox"]:checked + label:after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .footer-nav {
@@ -754,7 +753,7 @@ input[type="checkbox"]:checked + label:after {
   }
 
   .burger:hover .hover {
-    background-color: #FF9900;
+    background-color: #ff9900;
   }
 
   .burger:hover .hover:nth-child(2) {
@@ -778,7 +777,7 @@ input[type="checkbox"]:checked + label:after {
   }
 
   .burger .active {
-    background-color: #FF9900;
+    background-color: #ff9900;
   }
 
   .header__nav {
@@ -1180,7 +1179,6 @@ input[type="checkbox"]:checked + label:after {
 }
 
 @media (max-width: 630px) {
-
   .work-list-item1,
   .work-list-item:not(:last-child) {
     margin-right: 0;
@@ -1336,7 +1334,6 @@ input[type="checkbox"]:checked + label:after {
 }
 
 @media (max-width: 430px) {
-
   .container,
   .banner-section .container,
   .about-section .container,
