@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-display: swap;
+  font-weight: 400;
+  font-size: normal;
+  src: local("MontserratRegular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.ttf");
+}
+
 *,
 *::before,
 *::after {
@@ -109,7 +118,7 @@ ul {
 .header__search {
   width: 25px;
   height: 26px;
-  background-image: url(../img/Search.svg);
+  background-image: url(../img/02-search-1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -121,7 +130,7 @@ ul {
 }
 
 .header__search:hover {
-  background-image: url(../img/Search1.svg);
+  background-image: url(../img/02-search-2.svg);
 }
 
 .banner-section {
@@ -208,7 +217,7 @@ ul {
 
 .about-section .left-block {
   width: 49.2%;
-  background-image: url(../img/banner-2.jpg);
+  background-image: url(../img/05-about-banner-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -459,15 +468,15 @@ ul {
 }
 
 .social__link--fb {
-  background-image: url(../img/fb.svg);
+  background-image: url(../img/10-fb-icon.svg);
 }
 
 .social__link--vk {
-  background-image: url(../img/vk.svg);
+  background-image: url(../img/10-vk-icon.svg);
 }
 
 .social__link-inst {
-  background-image: url(../img/instagram.svg);
+  background-image: url(../img/10-inst-icon.svg);
 }
 
 .footer-middle {
@@ -1129,7 +1138,7 @@ input[type="checkbox"]:checked + label:after {
     margin-bottom: 14px;
     line-height: 1;
   }
-  /* 
+  /*
     .accordion__lable {
       justify-content: space-between;
     } */

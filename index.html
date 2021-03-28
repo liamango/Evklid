@@ -6,10 +6,7 @@
     <title>Евклид</title>
 
     <!-- font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="./fonts/Montserrat-Regular.ttf" as="font" />
 
     <!-- css -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -19,9 +16,8 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- js -->
-    <script src="script/swiper-boundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script/jquery-1.12.4.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
   </head>
 
   <body class="body">
@@ -34,7 +30,11 @@
           <span class="line hover"></span>
         </div>
         <a href="#" class="header__logo logo">
-          <img src="img/logo1.png" alt="Логотип" />
+          <img
+            class="lazyload"
+            data-src="img/01_logo-header.jpg"
+            alt="Логотип"
+          />
         </a>
         <nav class="header__nav nav">
           <ul class="nav__list">
@@ -74,7 +74,7 @@
             <div class="swiper-wrapper">
               <div
                 class="swiper-slide"
-                style="background-image: url(img/banner1.jpg)"
+                style="background-image: url(img/03-hero-banner-1.jpg)"
               >
                 <div class="banner-text">
                   <h1 class="hero__title">Проектные решения любой сложности</h1>
@@ -87,11 +87,11 @@
               </div>
               <div
                 class="swiper-slide"
-                style="background-image: url(img/banner2.jpg)"
+                style="background-image: url(img/03-hero-banner-2.jpg)"
               ></div>
               <div
                 class="swiper-slide"
-                style="background-image: url(img/banner3.jpg)"
+                style="background-image: url(img/03-hero-banner-3.jpg)"
               ></div>
             </div>
             <div class="swiper-pagination"></div>
@@ -114,7 +114,11 @@
             Следует отметить, что высококачественный прототип
             <span title="Lorem ipsum dolor"
               ><a href="#" aria-label="Заметка"
-                ><img src="img/i.svg" alt="Заметка" class="note" /></a
+                ><img
+                  class="lazyload"
+                  data-src="img/04-i.svg"
+                  alt="Заметка"
+                  class="note" /></a
             ></span>
             будущего проекта предопределяет высокую востребованность позиций,
             занимаемых участниками в отношении поставленных задач. Мы вынуждены
@@ -134,7 +138,11 @@
             </div>
           </div>
           <div class="left-block320">
-            <img src="img/Rectangle2.png" alt="Картинка" />
+            <img
+              class="lazyload"
+              data-src="img/05-about-banner-2.png"
+              alt="Картинка"
+            />
             <p class="descr320">
               Принимая во внимание показатели успешности, перспективное
               планирование способствует подготовке и реализации новых принципов.
@@ -143,11 +151,15 @@
           </div>
           <ul class="right-block">
             <li class="right-block-list">
-              <img src="img/Group25.svg" alt="Картинка" class="about__icon" />
               <img
-                src="img/Group25(1).svg"
+                data-src="img/06-about-icon-2.svg"
                 alt="Картинка"
-                class="about__icon1"
+                class="about__icon lazyload"
+              />
+              <img
+                data-src="img/06-about-icon-1.svg"
+                alt="Картинка"
+                class="about__icon1 lazyload"
               />
               <div class="about__text">
                 <h3 class="about__text-title">
@@ -161,11 +173,15 @@
               </div>
             </li>
             <li class="right-block-list">
-              <img src="img/Group24.svg" alt="Картинка" class="about__icon" />
               <img
-                src="img/Group24(1).svg"
+                data-src="img/07-about-icon-2.svg"
                 alt="Картинка"
-                class="about__icon1"
+                class="about__icon lazyload"
+              />
+              <img
+                data-src="img/07-about-icon-1.svg"
+                alt="Картинка"
+                class="about__icon1 lazyload"
               />
               <div class="about__text">
                 <h3 class="about__text-title about__text-title2">
@@ -226,7 +242,11 @@
             </div>
           </div>
           <div class="tab__image">
-            <img src="img/Rectangle18.jpg" alt="Картинка" class="tab__image1" />
+            <img
+              data-src="img/08-work-banner.jpg"
+              alt="Картинка"
+              class="tab__image1 lazyload"
+            />
           </div>
         </div>
       </section>
@@ -355,7 +375,10 @@
       <div class="container">
         <div class="footer-left">
           <a href="#" class="footer__logo"
-            ><img src="img/logo2.svg" alt="Логотип" class="img__footer"
+            ><img
+              data-src="img/09-footer-logo.svg"
+              alt="Логотип"
+              class="img__footer lazyload"
           /></a>
           <nav class="footer-nav">
             <ul class="footer-menu__item">
@@ -452,6 +475,11 @@
         </div>
       </div>
     </footer>
+    <script src="script/swiper-boundle.min.js"></script>
+    <script src="script/lazyload.min.js"></script>
     <script src="script/main.js"></script>
+    <script>
+      lazyload();
+    </script>
   </body>
 </html>
