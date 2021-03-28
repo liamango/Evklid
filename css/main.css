@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: normal;
   src: local("MontserratRegular"), local("Montserrat-Regular"),
-    url("../fonts/Montserrat-Regular.ttf");
+    url("../fonts/Montserrat-Regular.woff2");
 }
 
 *,
